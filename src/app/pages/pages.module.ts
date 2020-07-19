@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 
 import { SharedModule } from '../shared/shared.module';
+import { AppRoutingModule } from '../app-routing.module';
 
 import { PagesComponent } from './pages.component';
 
@@ -24,6 +25,7 @@ import { Graficas1Component } from './graficas1/graficas1.component';
       ],
       imports: [
         SharedModule,
+        AppRoutingModule
     ]
 })
 

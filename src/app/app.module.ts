@@ -6,24 +6,23 @@ import { AppRoutingModule } from './app-routing.module';
 
 // MODULOS
 import { PagesModule } from './pages/pages.module';
+import { AuthModule } from './auth/auth.module';
 
 // COMPONENTES
 import { AppComponent } from './app.component';
-import { LoginComponent } from './auth/login/login.component';
-import { RegisterComponent } from './auth/register/register.component';
+import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    RegisterComponent
+    NopagefoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    PagesModule
+    PagesModule,
+    AuthModule,
+    AppRoutingModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
